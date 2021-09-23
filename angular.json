@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "phonebooktest"
+    }
+  },
+  "defaultProject": "phonebooktest",
+  "cli": {
+    "analytics": "62f5592b-dcbe-4aed-9b8f-3290bfd86b88"
+  }
 }

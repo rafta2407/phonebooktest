@@ -1,0 +1,6 @@
+<p>Phone Books</p>
+<ul *ngIf="phoneBooks$ | async as phoneBooks">
+    <li *ngFor="let item of phoneBooks">            
+        <a routerLink="../detail/{{item.id}}">{{item.name}}</a>
+    </li>
+</ul>

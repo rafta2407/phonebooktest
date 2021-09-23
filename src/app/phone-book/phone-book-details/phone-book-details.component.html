@@ -1,0 +1,7 @@
+<h2>Phone Book Entries</h2>
+<a routerLink="../../list">Back to List</a> | <a [routerLink]="['/phone-entry/create/',bookId]">Create Entry</a>
+<div *ngIf="entries$ | async as entries">
+    <app-phone-book-card *ngFor="let entry of entries"
+    [name] = "entry.name"
+    [number] = "entry.phoneNumber"></app-phone-book-card>
+</div>
