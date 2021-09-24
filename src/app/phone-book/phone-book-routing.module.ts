@@ -6,7 +6,8 @@ import { ListPhoneBooksComponent } from './list-phone-books/list-phone-books.com
 
 const routes: Routes = [{path: 'create', component: CreatePhoneBookComponent},
 {path: 'detail/:id', component: PhoneBookDetailsComponent},
-{ path: 'list', component: ListPhoneBooksComponent}];
+{ path: 'list', component: ListPhoneBooksComponent},
+{path: '', redirectTo: 'list'}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
